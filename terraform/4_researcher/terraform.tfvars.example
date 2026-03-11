@@ -5,7 +5,7 @@
 aws_region = "eu-west-2"
 
 # Your OpenAI API key (get from https://platform.openai.com/api-keys)
-openai_api_key = "sk-..."
+openai_api_key = 
 
 # API endpoint from Part 3 (get from Terraform output or API Gateway console)
 alex_api_endpoint = "https://xxxxxxxxxx.execute-api.eu-west-2.amazonaws.com/prod/ingest"
