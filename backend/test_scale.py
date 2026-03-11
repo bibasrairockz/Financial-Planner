@@ -91,7 +91,7 @@ async def create_test_user(user_num: int, num_accounts: int, num_positions: int)
 
 async def send_job_to_sqs(job_id: str):
     """Send a job to SQS"""
-    sqs = boto3.client('sqs', region_name=os.getenv('DEFAULT_AWS_REGION', 'us-east-1'))
+    sqs = boto3.client('sqs', region_name=os.getenv('DEFAULT_AWS_REGION', 'eu-west-2'))
     
     # Get queue URL
     queue_name = 'alex-analysis-jobs'

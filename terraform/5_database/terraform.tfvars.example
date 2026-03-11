@@ -3,7 +3,7 @@
 
 # Your AWS region for Aurora database
 # Should match your main infrastructure region
-aws_region = "us-east-1"
+aws_region = "eu-west-2"
 
 # Aurora Serverless v2 scaling configuration
 # Minimum capacity in ACUs (0.5 = ~$43/month minimum)

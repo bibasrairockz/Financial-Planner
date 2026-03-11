@@ -134,7 +134,7 @@ async def get_market_insights(
         bucket = f"alex-vectors-{account_id}"
 
         # Get embeddings
-        sagemaker_region = os.getenv("DEFAULT_AWS_REGION", "us-east-1")
+        sagemaker_region = os.getenv("DEFAULT_AWS_REGION", "eu-west-2")
         sagemaker = boto3.client("sagemaker-runtime", region_name=sagemaker_region)
         endpoint_name = os.getenv("SAGEMAKER_ENDPOINT", "alex-embedding-endpoint")
         query = f"market analysis {' '.join(symbols[:5])}" if symbols else "market outlook"

@@ -52,7 +52,7 @@ class DataAPIClient:
                 "Set AURORA_CLUSTER_ARN and AURORA_SECRET_ARN environment variables."
             )
 
-        self.region = os.environ.get("DEFAULT_AWS_REGION", "us-east-1")
+        self.region = os.environ.get("DEFAULT_AWS_REGION", "eu-west-2")
         self.client = boto3.client("rds-data", region_name=self.region)
 
     def execute(self, sql: str, parameters: List[Dict] = None) -> Dict:

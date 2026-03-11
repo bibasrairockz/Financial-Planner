@@ -141,7 +141,7 @@ def test_multiple_accounts():
     
     # Trigger analysis via SQS
     """Send a job to SQS"""
-    sqs = boto3.client('sqs', region_name=os.getenv('DEFAULT_AWS_REGION', 'us-east-1'))
+    sqs = boto3.client('sqs', region_name=os.getenv('DEFAULT_AWS_REGION', 'eu-west-2'))
     
     # Get queue URL
     queue_name = 'alex-analysis-jobs'

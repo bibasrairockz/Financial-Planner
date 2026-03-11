@@ -20,7 +20,7 @@ class TaggerTest:
     """Test class that packages, deploys, and tests the tagger Lambda"""
 
     def __init__(self):
-        self.lambda_client = boto3.client('lambda', region_name='us-east-1')
+        self.lambda_client = boto3.client('lambda', region_name='eu-west-2')
         self.db = Database()
 
     def package_tagger(self):
@@ -62,7 +62,7 @@ class TaggerTest:
 
         try:
             # Package is too large for direct upload, must use S3
-            s3_client = boto3.client('s3', region_name='us-east-1')
+            s3_client = boto3.client('s3', region_name='eu-west-2')
 
             # Use the existing Lambda packages bucket
             bucket_name = f"alex-lambda-packages-{boto3.client('sts').get_caller_identity()['Account']}"

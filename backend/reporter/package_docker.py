@@ -55,11 +55,15 @@ def package_lambda():
         req_file = temp_path / "requirements.txt"
         req_file.write_text("\n".join(filtered_requirements))
 
+        uid = os.getuid()
+        gid = os.getgid()
+
         # Use Docker to install dependencies for Lambda's architecture
         docker_cmd = [
             "docker",
             "run",
             "--rm",
+            "--user", f"{uid}:{gid}",
             "--platform",
             "linux/amd64",
             "-v",

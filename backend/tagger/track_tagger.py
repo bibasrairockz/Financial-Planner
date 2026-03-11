@@ -16,7 +16,7 @@ class TaggerLogTracker:
     """Continuously poll and display Tagger Lambda logs"""
 
     def __init__(self):
-        self.logs_client = boto3.client('logs', region_name='us-east-1')
+        self.logs_client = boto3.client('logs', region_name='eu-west-2')
         self.log_group_name = '/aws/lambda/alex-tagger'
         self.running = True
         self.last_timestamp = None

@@ -59,8 +59,13 @@ def package_lambda():
         # Use Docker to install dependencies for Lambda's architecture
         # The --no-emit-project excludes the current project from requirements
         # We still need to manually install the database package
+        uid = os.getuid()
+        gid = os.getgid()
+        
+        # Use Docker to install dependencies for Lambda's architecture
         docker_cmd = [
             "docker", "run", "--rm",
+            "--user", f"{uid}:{gid}",
             "--platform", "linux/amd64",
             "-v", f"{temp_path}:/build",
             "-v", f"{backend_dir}/database:/database",
