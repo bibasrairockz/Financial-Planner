@@ -4,7 +4,8 @@ A multi-agent financial ecosystem designed to automate portfolio management, ret
 
 ---
 ### 🌟 Demo
-https://drive.google.com/file/d/1Pv139KODUuCNzcTyMtqUNk8NtonZpgFh/view?usp=sharing
+
+https://github.com/user-attachments/assets/025fccff-c455-49e3-8ad3-c0687b7a7cb5
 
 
 
