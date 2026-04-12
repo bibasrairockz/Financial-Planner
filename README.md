@@ -7,6 +7,9 @@ A multi-agent financial ecosystem designed to automate portfolio management, ret
 
 https://github.com/user-attachments/assets/025fccff-c455-49e3-8ad3-c0687b7a7cb5
 
+### 🌟 Core Features
+<img width="658" height="872" alt="Untitled Diagram drawio" src="https://github.com/user-attachments/assets/42af61a2-3971-4abb-a1bc-25fa3435b82d" />
+
 
 
 ### 🌟 Core Features
