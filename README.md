@@ -1,8 +1,12 @@
 # 📈 AI-Powered SaaS Financial Planning
 
-**A multi-agent financial ecosystem designed to automate portfolio management, retirement planning, and market research. By leveraging serverless AWS architecture and collaborative AI agents, turns complex financial data into actionable, personalized insights.
+A multi-agent financial ecosystem designed to automate portfolio management, retirement planning, and market research. By leveraging serverless AWS architecture and collaborative AI agents, turns complex financial data into actionable, personalized insights.
 
 ---
+### 🌟 Demo
+https://drive.google.com/file/d/1Pv139KODUuCNzcTyMtqUNk8NtonZpgFh/view?usp=sharing
+
+
 
 ### 🌟 Core Features
 *   **Multi-Agent Collaboration**: Specialized agents (Planner, Tagger, Reporter, Charter) work in parallel to process financial data.
