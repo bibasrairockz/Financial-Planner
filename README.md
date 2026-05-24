@@ -1,26 +1,26 @@
-# 📈 AI-Powered SaaS Financial Planning
+# AI-Powered SaaS Financial Planning
 
 A multi-agent financial ecosystem designed to automate portfolio management, retirement planning, and market research. By leveraging serverless AWS architecture and collaborative AI agents, turns complex financial data into actionable, personalized insights.
 
 ---
-### 🌟 Demo
+### Demo
 
 https://github.com/user-attachments/assets/025fccff-c455-49e3-8ad3-c0687b7a7cb5
 
 
-### 🌟 Core Features
+### Core Features
 *   **Multi-Agent Collaboration**: Specialized agents (Planner, Tagger, Reporter, Charter) work in parallel to process financial data.
 *   **Semantic Intelligence**: Cost-effective vector search using S3 and SageMaker for deep market analysis.
 *   **Retirement Forecasting**: Built-in Monte Carlo simulations for accurate long-term planning.
 *   **Real-time Visualization**: Dynamic, JSON-based interactive charts and dashboards.
 
 ---
-### 🌟 Architecture
+### Architecture
 <img width="658" height="872" alt="Untitled Diagram drawio" src="https://github.com/user-attachments/assets/42af61a2-3971-4abb-a1bc-25fa3435b82d" />
 
 
 
-### 🛠️ Tech Stack
+### Tech Stack
 
 
 | Layer | Technology |
@@ -34,7 +34,7 @@ https://github.com/user-attachments/assets/025fccff-c455-49e3-8ad3-c0687b7a7cb5
 
 ---
 
-### 🏗️ System Architecture & Data Flow
+### System Architecture & Data Flow
 
 1.  **Interaction**: Users manage portfolios via the **Next.js** frontend, secured by **Clerk**.
 2.  **Orchestration**: **API Gateway** triggers **Lambda** functions where the **Planner Agent** delegates tasks via **SQS**.
